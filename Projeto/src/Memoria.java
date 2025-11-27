@@ -65,5 +65,20 @@ public class Memoria {
         this.verificarMemoria = null;
         this.tamanhoMemoria = 0;
     }
+
+    public boolean buddy(Memoria itens) {
+        if (this.tamanhoMemoria != itens.tamanhoMemoria) {
+            return false;
+        }
+
+        long posBuddy;
+        if ((this.posicaoComeco ** this.tamanhoMemoria) % 2 == 0) {
+            posBuddy = this.posicaoComeco + this.tamanhoMemoria;
+        } else {
+            posBuddy = this.posicaoComeco - this.tamanhoMemoria;
+        }
+
+        return itens.posicaoComeco == posBuddy;
+    }
 }
 
