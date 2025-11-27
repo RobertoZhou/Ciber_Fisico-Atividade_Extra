@@ -1,32 +1,32 @@
 public class Memoria {
-    private long tamnhoMemoria;
-    private String disponibilidade;
+    private long tamanhoMemoria;
+    private String verificarMemoria;
     private boolean situacao;
     private long posicaoComeco;
     private long comprimento;
 
-    public Memoria(long tamnhoMemoria, String disponibilidade, boolean situacao, long posicaoComeco, long comprimento) {
-        this.tamnhoMemoria = tamnhoMemoria;
-        this.disponibilidade = disponibilidade;
+    public Memoria(long tamanhoMemoria, String verificarMemoria, boolean situacao, long posicaoComeco, long comprimento) {
+        this.tamanhoMemoria = tamanhoMemoria;
+        this.verificarMemoria = verificarMemoria;
         this.situacao = situacao;
         this.posicaoComeco = posicaoComeco;
         this.comprimento = comprimento;
     }
 
-    public long getTamnhoMemoria() {
-        return tamnhoMemoria;
+    public long getTamanhoMemoria() {
+        return tamanhoMemoria;
     }
 
-    public void setTamnhoMemoria(long tamnhoMemoria) {
-        this.tamnhoMemoria = tamnhoMemoria;
+    public void setTamnahoMemoria(long tamnhoMemoria) {
+        this.tamanhoMemoria = tamnhoMemoria;
     }
 
     public String getDisponibilidade() {
-        return disponibilidade;
+        return verificarMemoria;
     }
 
     public void setDisponibilidade(String disponibilidade) {
-        this.disponibilidade = disponibilidade;
+        this.verificarMemoria = disponibilidade;
     }
 
     public boolean isSituacao() {
@@ -52,4 +52,18 @@ public class Memoria {
     public void setComprimento(long comprimento) {
         this.comprimento = comprimento;
     }
+
+
+    public void addItem(String label, long progSize) {
+        this.situacao = false;
+        this.verificarMemoria = label;
+        this.tamanhoMemoria = progSize;
+    }
+
+    public void situacaoAtual() {
+        this.situacao = true;
+        this.verificarMemoria = null;
+        this.tamanhoMemoria = 0;
+    }
 }
+
