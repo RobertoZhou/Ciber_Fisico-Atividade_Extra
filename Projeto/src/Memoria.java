@@ -72,9 +72,10 @@ public class Memoria {
         }
 
         long posBuddy;
-        if ((this.posicaoComeco ** this.tamanhoMemoria) % 2 == 0) {
+        if ((this.posicaoComeco / this.tamanhoMemoria) % 2 == 0) {
             posBuddy = this.posicaoComeco + this.tamanhoMemoria;
         } else {
+            // Este bloco está em posição ímpar, buddy está à esquerda
             posBuddy = this.posicaoComeco - this.tamanhoMemoria;
         }
 
