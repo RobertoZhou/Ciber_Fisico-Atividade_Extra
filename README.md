@@ -10,15 +10,15 @@ https://youtu.be/xeXnhpzvDuw
 O projeto consiste em um alocador de arquivos pelo sistema Buddy, que é um algoritmo de memória que divide 
 blocos de memória em duas metades até que um tamanho adequado para a solicitação seja encontrado
 
-Como o buddy funciona?
+## Como o buddy funciona?
 
-## 1-Divisão da memória: O alocador começa com um único bloco de memória e, quando uma solicitação de memória é feita, ele divide esse bloco ao meio repetidamente (em potências de 2) até encontrar um bloco do tamanho apropriado.
+### 1-Divisão da memória: O alocador começa com um único bloco de memória e, quando uma solicitação de memória é feita, ele divide esse bloco ao meio repetidamente (em potências de 2) até encontrar um bloco do tamanho apropriado.
 
-## 2-Alocação: Um desses blocos resultantes é alocado para a solicitação, e o outro fica livre e pode ser dividido novamente se necessário.
+### 2-Alocação: Um desses blocos resultantes é alocado para a solicitação, e o outro fica livre e pode ser dividido novamente se necessário.
 
-## 3-Mesclagem: Quando um bloco é liberado, o sistema verifica se seu parceiro ("buddy") também está livre. Se estiver, eles são mesclados para formar um bloco de tamanho maior, reunindo os dois parceiros.
+### 3-Mesclagem: Quando um bloco é liberado, o sistema verifica se seu parceiro ("buddy") também está livre. Se estiver, eles são mesclados para formar um bloco de tamanho maior, reunindo os dois parceiros.
 
-## 4-Objetivo: O objetivo principal é otimizar a alocação e evitar a fragmentação da memória, usando o processo de divisão e mesclagem para gerenciar blocos livres de forma eficiente. 
+### 4-Objetivo: O objetivo principal é otimizar a alocação e evitar a fragmentação da memória, usando o processo de divisão e mesclagem para gerenciar blocos livres de forma eficiente. 
 
 Fonte: https://www-kernel-org.translate.goog/doc/gorman/html/understand/understand009.html?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=sge#:~:text=O%20algoritmo%20principal%20utilizado%20é,o%20alocador%20lida%20com%20isso.
 
