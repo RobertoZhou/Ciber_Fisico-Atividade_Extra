@@ -13,6 +13,8 @@ public class Memoria {
         this.comprimento = comprimento;
     }
 
+
+
     public long getTamanhoMemoria() {
         return tamanhoMemoria;
     }
