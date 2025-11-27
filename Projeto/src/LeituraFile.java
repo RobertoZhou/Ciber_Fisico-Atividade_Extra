@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class BuffyPrograma {
+public class LeituraFile {
 
     public static class BlocoPrograma {
 
@@ -67,10 +67,10 @@ public class BuffyPrograma {
             }
 
         } catch (IOException erro) {
-            System.out.println("Erro ao abrir ou ler o arquivo: " + caminho);
+            System.out.println("Erro" + caminho);
             return null;
         } catch (NumberFormatException erro) {
-            System.out.println("Erro ao converter o tamanho do programa");
+            System.out.println("Erro");
             return null;
         } finally {
 

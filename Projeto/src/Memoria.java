@@ -81,4 +81,3 @@ public class Memoria {
         return itens.posicaoComeco == posBuddy;
     }
 }
-
