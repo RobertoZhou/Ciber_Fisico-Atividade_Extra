@@ -1,5 +1,11 @@
 # Ciber_Fisico-Atividade_Extra
 
+## Alunos
+Roberto Zhou e Matheus De Bortoli Silva
+
+## Link do Youtube
+
+https://youtu.be/xeXnhpzvDuw
 
 O projeto consiste em um alocador de arquivos pelo sistema Buddy, que é um algoritmo de memória que divide 
 blocos de memória em duas metades até que um tamanho adequado para a solicitação seja encontrado
