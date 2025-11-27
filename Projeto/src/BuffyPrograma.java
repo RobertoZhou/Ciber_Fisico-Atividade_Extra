@@ -22,7 +22,6 @@ public class BuffyPrograma {
             return qtd;
         }
 
-        // Lê arquivo TXT e devolve vetor com programas encontrados
         public static BlocoPrograma[] carregarDoArquivo(String caminho) {
 
             BlocoPrograma[] vetorTemp = new BlocoPrograma[100]; // limite simples
