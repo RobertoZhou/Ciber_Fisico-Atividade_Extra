@@ -4,7 +4,6 @@ import java.io.IOException;
 
 public class BuffyPrograma {
 
-    // Classe simples para representar cada programa do arquivo
     public static class BlocoPrograma {
 
         public String nome;
@@ -16,7 +15,6 @@ public class BuffyPrograma {
         }
     }
 
-    // Retorna quantos programas existem no vetor
     public static int contar(BlocoPrograma[] lista) {
 
         if (lista == null) {
@@ -32,7 +30,6 @@ public class BuffyPrograma {
         return total;
     }
 
-    // Lê o arquivo TXT e retorna um vetor de BlocoPrograma
     public static BlocoPrograma[] lerArquivo(String caminho) {
 
         BlocoPrograma[] listaTemp = new BlocoPrograma[100]; // limite simples
