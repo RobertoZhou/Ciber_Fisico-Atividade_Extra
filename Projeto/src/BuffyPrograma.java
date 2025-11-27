@@ -1,3 +1,6 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+
 public class BuffyPrograma {
 
     // Classe simples representando um programa do arquivo
